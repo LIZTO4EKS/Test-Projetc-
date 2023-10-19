@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:
+'Montserrat',sans-serif;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.main-wrapper{
+    margin:0 auto;
+    padding:0 15px;
+    max-width:1170px;
+}
+
+header{
+    background-color:#4e4e4e;
+    height: 80px;
+    position: sticky;
+    top:0;
+    z-index:10;
+}
+
+header>.main-wrapper{
+    display:flex;
+    align-items:center;
+    height:100%;
+}
+
+.main-menu{
+    margin-left:auto;
+}
+
+.main-menu>ul>li{
+    display:inline-table;
+    font-size:15px;
+    font-family:'Roboto',sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color:white;
+    margin-right:15px;
+    cursor:pointer;
+    position:relative;
+}
+
+.main-menu>ul>li>a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.main-menu>ul>li:last-child{
+    margin-right:0;
+}
+
+.main-menu>ul>li::before{
+    content:'';
+    width:10%;
+    height:4px;
+    background:black;
+    position:absolute;
+    left:0;
+    right:100px;
+    margin:0 auto;
+    top:20px;
+    opacity:0;
+    transition-duration: 0.3s;
+}
+
+.main-menu>ul>li:hover::before{
+    opacity:1;
+    width:100%;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+}
+
+.main-board{
+    background: url('images/board.jpg')no-repeat fixed;
+    background-position: 50%-50px;
+    background-size: cover;
+    height: 500px;
+    position:relative;   
+}
+
+.main-board::after{
+    content:'';
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.main-board>.main-wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.main-board__left-block{
+    width:50%;
+}
+
+.main-board_images {
+    margin:auto;
+}
+
+.main-board h1{
+    color:white;
+    padding: 40px 0 0 30px;
+    position:relative;
+    margin-bottom: 50px;
+    text-shadow:white;
+}
+
+.main-board__left-block>div:first-of-type{
+    color:white;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+    margin-bottom: 65px;
+    text-shadow: white;
+}
+
+.main-board__left-block>div:last-of-type{
+    display: flex;
+}
+
+.main-board__button-link:first-of-type{
+    margin-right: 20px;
+}
+
+.reg { 
+    color: white;
+    background: url(images/board\ register.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px; 
+}
+
+input[type=text], input[type=password] { 
+    width: 30%; 
+    padding: 5px; 
+    margin: 2px 0 11px 0; 
+    display: inline-block; 
+    border: none; 
+    background: white; 
+}
+
+input[text]:focus{
+    color: white;
+}
+
+input[type=text]:focus, input[type=password]:focus { 
+    background-color: white; 
+    outline: none; 
+} 
+
+hr { 
+    border: 1px solid black; 
+    margin-bottom: 2px; 
+} 
+
+.registerbtn { 
+    background-color: rgb(51, 49, 49); 
+    color: white;
+    padding: 10px; 
+    margin: 4px 0; 
+    border: none; 
+    cursor: pointer; 
+    width: 30%; 
+    opacity: 0.9; 
+} 
+
+.registerbtn:hover { 
+    opacity:1; 
+} 
+
+a { 
+    color: white; 
+} 
+
+.signin { 
+    background-color: black; 
+    text-align: center; 
+} 
+
+.form {
+    display: inlinae-block;
+    display: flex;
+    margin-top:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
